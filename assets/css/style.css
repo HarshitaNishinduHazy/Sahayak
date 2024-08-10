@@ -2,10 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
 
 
 
@@ -430,8 +426,11 @@ body {
 .hero-title { margin-block: 16px 30px; }
 
 .hero-text {
-  color: var(--black-chocolate);
-  font-weight: var(--fw-600);
+  color: var(--blue-green-color-wheel);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .hero .btn { margin-block: 20px; }
@@ -449,8 +448,8 @@ body {
 }
 
 .hero .social-link {
-  font-size: 14px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 25px;
   border: 1px solid var(--blue-green-color-wheel_10);
   border-radius: 50%;
   transition: var(--transition-1);
@@ -772,7 +771,7 @@ body {
 .app .section-subtitle { font-size: var(--fs-6); }
 
 .app .section-title {
-  color: var(--white);
+  color: rgb(108,153,100);
   margin-block-end: 40px;
 }
 
@@ -1085,8 +1084,8 @@ body {
   .app-card { padding: 50px; }
 
   .app-card::before {
-    width: 150px;
-    height: 250px;
+    width: 140px;
+    height: 200px;
   }
 
   .app-card::after {
@@ -1217,7 +1216,8 @@ body {
    * APP
    */
 
-  .app-card { padding: 100px 50px; }
+  .app-card { padding: 100px 50px; 
+  background-color:rgba(235,241,207,255);}
 
 }
 
