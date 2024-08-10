@@ -72,7 +72,48 @@
 
       </nav>
 
-      <a href="#" class="btn btn-primary">Sign Up</a>
+      <button id="showFormButton">Sign-Up</button>
+        <!-- Registration Form (initially hidden) -->
+    <div id="registrationFormContainerOverlay" class="form-container" >
+        <div id="containerRegistrationModal">
+
+            <form id="registrationForm">
+
+              <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <span class="error-message" id="nameError"></span>
+              </div>
+
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="text" id="phone" name="phone" required>
+              <span class="error-message" id="phoneError"></span>
+          </div>
+
+          <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <span class="error-message" id="passwordError"></span>
+          </div>
+
+          <div class="form-group">
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" required>
+              <span class="error-message" id="confirmPasswordError"></span>
+          </div>
+
+          <button type="submit" id="RegisterButton">Register</button>
+          <button type="button" id="closeButton">Close</button>
+      </form>
+  </div>
+</div>
 
       <button class="nav-toggle-btn" aria-label="open manu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -893,22 +934,20 @@
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
   </a>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <!-- 
+      - custom js link
+    -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/script2.js" defer></script>
+    <!-- 
+      - ionicon link
+    -->
 
+ 
 
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js" defer></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+  </body>
 
 </html>
